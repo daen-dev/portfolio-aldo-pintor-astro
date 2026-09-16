@@ -1,0 +1,377 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout>
+	<body class="bg-surface text-on-surface font-body-md text-body-md">
+    
+    <main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Gallery Introductory Strip -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-4 pb-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div class="max-w-2xl space-y-3"><div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">photo_library</span><span class="">Proyectos Reales</span></div><h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Galería de Trabajos</h1><p class="font-body-lg text-body-lg text-on-surface-variant">Resultados reales en viviendas y fachadas. Acabados impecables garantizados.</p></div>
+<!-- Quick Trust Metric Cluster -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm shadow-sm font-bold">15+</div>
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary leading-tight">480+ Viviendas Renovadas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acabados sin marcas ni polvo residual</span>
+</div>
+</div>
+</div>
+<!-- Filter Buttons Bar -->
+<div class="mt-8 flex items-center gap-2 overflow-x-auto pb-2 -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0 scrollbar-none" id="portfolio-filters">
+<button class="portfolio-filter-btn active-filter px-4 py-2 rounded font-label-lg text-label-lg bg-primary text-on-primary shadow-sm whitespace-nowrap transition-all" data-filter="all">
+        Todos (6)
+      </button>
+<button class="portfolio-filter-btn px-4 py-2 rounded font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap transition-all" data-filter="interiores">
+        Interiores
+      </button>
+<button class="portfolio-filter-btn px-4 py-2 rounded font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap transition-all" data-filter="fachadas">
+        Exteriores &amp; Fachadas
+      </button>
+<button class="portfolio-filter-btn px-4 py-2 rounded font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap transition-all" data-filter="alisado">
+        Alisado &amp; Gotelé
+      </button>
+<button class="portfolio-filter-btn px-4 py-2 rounded font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap transition-all" data-filter="lacado">
+        Lacado de Puertas &amp; Muebles
+      </button>
+</div>
+</section>
+<!-- Interactive Project Showcase Grid -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="portfolio-grid">
+<!-- Card 1: Interiores -->
+<article class="portfolio-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="interiores">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern spacious living room interior freshly painted in warm off-white tones with a striking terracotta accent feature wall. Scandinavian minimalist furniture, soft afternoon daylight pouring through floor-to-ceiling windows, sharp crisp ceiling margins, professional architectural finish, ultra high resolution photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2qFdgWHa4t75ERJoFj-0L_P-Joa6J6zJmcOv9RALJI2OWYsgOOWqtRUsUCNfCMfqu7DAITYYoEfnl9rYNN3KBTF6TqjrgRZts192QUWAk7emhtU_GOE1mk147xKrtO_4zglTmf7jvetix9AlW4BdTiesK_fFkqk_U1dcsqAJ2D60yIjtlnOEsPWw3d5HBydPQJLPwbBKRrqSrXFVSY5H97LDePlXkpAUj6WBtIvhK0cyBXwbFzWeIOQ">
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+              Interiores
+            </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pace</span>
+<span class="">3 Días</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2"><h2 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Salón Moderno con Acento Terracota</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Renovación integral con pared focal terracota mate aterciopelado.</p><div class="pt-2 flex flex-wrap gap-2 font-label-sm text-label-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Plástica Premium Clase 1</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Rodillo microfibra</span></div></div>
+<a class="mt-2 w-full py-2.5 px-4 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" href="https://wa.me/34612345678?text=Hola%2C%20me%20gust%C3%B3%20el%20proyecto%20de%20Sal%C3%B3n%20con%20pared%20terracota.%20%C2%BFQu%C3%A9%20costo%20aproximado%20tendr%C3%ADa%20para%20mi%20casa%3F" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">chat</span>
+<span class="">Pedir acabado similar por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Card 2: Fachadas -->
+<article class="portfolio-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="fachadas">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Exterior facade of a modern Spanish single-family townhouse completely repainted in crisp stone-sand matte breathable exterior coating with a dark graphite base perimeter plinth. Bright natural sunlight, lush lawn foreground, clean architectural borders, pristine masonry, professional architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHwaiMrIZF77m9VvGAaBITUA2Vbw3Fi_0t6cxycch_aquq-0jeYrOJ6oBOfzgO_vwovGYj0kXXcZd5KVeUVCgEpz1qHLDZ5YLCi374q4ge-sqbOSUXGEs7HJGQxkxzcTigFByksFIqb5RkTJmgk3ReRUkdN-TPTqyiVUDDSZXG5nBBYzsT2thAbyRnMpuFJ1dANo4W8Yr7qkvyvmaIjB17Za_aGfvxO5mZiMI0okUUT7E5vFAt9_NJ3w">
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+              Exteriores &amp; Fachadas
+            </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pace</span>
+<span class="">6 Días</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2"><h2 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Fachada Unifamiliar &amp; Zócalo Protector</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Rehabilitación integral antifisuras con zócalo hidrófugo antracita.</p><div class="pt-2 flex flex-wrap gap-2 font-label-sm text-label-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Elástica antifisuras 10 años</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Tratamiento antimoho</span></div></div>
+<a class="mt-2 w-full py-2.5 px-4 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" href="https://wa.me/34612345678?text=Hola%2C%20quiero%20un%20presupuesto%20para%20pintar%20la%20fachada%20de%20mi%20chalet%20como%20en%20vuestro%20portafolio." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">chat</span>
+<span class="">Pedir acabado similar por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Card 3: Alisado -->
+<article class="portfolio-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="alisado">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Impeccably smooth newly plastered flat wall without any texture or imperfections, finished in silk pure eggshell white paint. Low raking warm light cast across the flat plane illustrating zero bumps or marks, contemporary designer hallway in Madrid, architectural magazine quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgOHDxSdGmUhiTfEACwRGQCmMWWJd4qeV-h8VQhjhlE73EcCD388dHircGwl6LbGDa2eITSqqP5KS9BowwHrxonT99IvwRBoFWihUI3a7nn7Cp_hCumpJQGajqwvMq4viK_6PqHkf4kagikCF3MVyr3IupLT7uWhcbGqUCfj9RcmbdIajO8q4v-hyjgpyBNGgPxeqmDC_LkpeY3AnlNRDn6EhT3zAixWqtIb9KafvljW-RjCvCSy8v5w">
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm">
+              Alisado &amp; Gotelé
+            </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pace</span>
+<span class="">5 Días (90m²)</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2"><h2 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Alisado Espejo Q4 en Piso Completo</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Eliminación de gotelé con aspirado y acabado tacto seda continuo.</p><div class="pt-2 flex flex-wrap gap-2 font-label-sm text-label-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">2 manos mecánicas</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Lijado Festool sin polvo</span></div></div>
+<a class="mt-2 w-full py-2.5 px-4 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" href="https://wa.me/34612345678?text=Hola%2C%20tengo%20un%20piso%20con%20gotel%C3%A9%20y%20quiero%20alisarlo%20como%20el%20del%20proyecto%20de%2090m2." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">chat</span>
+<span class="">Pedir acabado similar por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Card 4: Interiores -->
+<article class="portfolio-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="interiores">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Serene master bedroom suite interior finished in soft muted linen paint tones, classic decorative wall boiserie mouldings enamelled in satin warm white, soft neutral linens on the bed, delicate morning light, refined luxury hotel feel, clean edges and perfect trims." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpM1QY-wFY_h0Qnn_k0Cmcqb2Smt6zJ91QiaEpz3uUw-wiMopPHBBUNeZqkaj4qvvvHAVl0oK3adSg9nuIC7wki78a5FfCONxBpTLump2lObrAjk3Z9RDBgXKs-cfRhggLmx_KqHnfxymvGs7oByx3KTGx2MR0ur5YlO9uXERoU-RFlWUYoN23c8hCOqayc3_JG769zRSaKwGHAtYJui6Xo1EErM_Kz6MtAEs1plgp1wrF8BnIS25VsQ">
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+              Interiores
+            </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pace</span>
+<span class="">2 Días</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2"><h2 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Dormitorio Lino con Molduras Decorativas</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Paredes cálidas transpirables y molduras esmaltadas a pincel fino.</p><div class="pt-2 flex flex-wrap gap-2 font-label-sm text-label-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Acrílica Cero COV</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Esmalte satinado</span></div></div>
+<a class="mt-2 w-full py-2.5 px-4 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" href="https://wa.me/34612345678?text=Hola%2C%20me%20interesa%20el%20acabado%20de%20molduras%20y%20tono%20lino%20para%20un%20dormitorio." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">chat</span>
+<span class="">Pedir acabado similar por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Card 5: Lacado -->
+<article class="portfolio-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="lacado">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up detailed view of interior timber passage doors sprayed and lacquered in silk satin pure white RAL 9010, flawless smooth factory finish, modern stainless steel lever door handle, matching white painted baseboards on hardwood oak floor, architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_ATQvUI3iOBNvYC69o9LuxUOMYTMHSmbGjaaOVJUV5tdOGvnblL-dM3gYnOwlcc-syd_poJ4k8vmSBZGlni0yPCe1I_mWQlZpc-0HDPJpOR6Ds9LCgj1MAjKL8QqspizFR2gm-0Rx6Qasxi5pzgO5blAX7w0SGTWsvNCDQxWs368phtxDVJv3gf6muMRmADCBDpzEfZ96KEnXXe5z2LYWFdJ7kfS06tGfbA0jJMqD5NwJpD0XLdCy9g">
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm">
+              Lacado de Puertas &amp; Muebles
+            </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pace</span>
+<span class="">4 Días (8 Puertas)</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2"><h2 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Lacado en Blanco de Puertas y Rodapiés</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Acabado de fábrica liso y ultrarresistente mediante cabina in situ.</p><div class="pt-2 flex flex-wrap gap-2 font-label-sm text-label-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Poliuretano al agua</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Turbina HVLP</span></div></div>
+<a class="mt-2 w-full py-2.5 px-4 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" href="https://wa.me/34612345678?text=Hola%2C%20quisiera%20lacar%20las%20puertas%20de%20paso%20de%20mi%20casa%20en%20blanco%20como%20en%20su%20web." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">chat</span>
+<span class="">Pedir acabado similar por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Card 6: Interiores / Cocinas -->
+<article class="portfolio-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-category="interiores">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pristine minimalist kitchen and dining space with smooth light slate gray walls painted in moisture-resistant vapor-proof matte enamel paint. Modern quartz countertops, induction cooktop, warm pendant lights reflecting off subtle sheen of clean durable paintwork, interior styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAx-lLyde8v8OWoMSfc7YsCbam0jv-8r6hCkRr2Ma0s-HPKA0m2rSJylMBpnhZyErRaW2z_wDSsmZoTT4M2mi2JZoqgVWRLZiRJwP-UZDEUcC4Ix4fQT13Px-OaigYBr-svZMbYPhuQ57kmlaMG99ogIEMmuZJqyftWwhv1_CP3BO5a5sBvoxNFlTUEX8z0FeXX_sPk9d825OSynPKOY0XWtnkHxe3tIMcCidghFxcFfzjkB343Pr4IQ">
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+              Interiores Técnicos
+            </span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pace</span>
+<span class="">2 Días</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2"><h2 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Cocina y Zonas Húmedas Antivapor</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Protección lavable frente a condensación y salpicaduras con iones de plata.</p><div class="pt-2 flex flex-wrap gap-2 font-label-sm text-label-sm"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Fungicida lavable</span><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">10.000 ciclos fricción</span></div></div>
+<a class="mt-2 w-full py-2.5 px-4 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all shadow-sm" href="https://wa.me/34612345678?text=Hola%2C%20necesito%20pintar%20cocina%20y%20ba%C3%B1os%20con%20pintura%20resistente%20a%20vapores." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">chat</span>
+<span class="">Pedir acabado similar por WhatsApp</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Before / After Comparison Showcase -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-12">
+<div class="bg-surface-container-low rounded-2xl p-6 md:p-10 shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
+<div class="space-y-2 max-w-xl"><div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">compare</span><span class="">Transformación Verificable</span></div><h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Antes y Después</h2><p class="font-body-md text-body-md text-on-surface-variant">Desliza el comparador para comprobar la precisión de acabado en esquinas y paredes.</p></div>
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-outline"></span>Antes: Superficie rugosa y manchada</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>Después: Alisado Q4 satinado</span>
+</div>
+</div>
+<!-- Comparison Slider Container -->
+<div class="relative w-full h-[380px] md:h-[500px] rounded-xl overflow-hidden shadow-lg select-none" id="before-after-container">
+<!-- AFTER Image (Underneath, full size) -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="After renovation: Perfectly smooth bright white living room wall with flawless silk sheen, sharp edge against clean wooden baseboards, modern warm interior glow, architectural precision, no flaws or dust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDi6Xit6GfmJ0_VxFQf1aiQZJii6f5DqePQnqil0moffyXihuQsFRSMy4mF-YdVa3rxw-cNJLzfTugvQK5axpodK4KbXI2oIsyn_-h0cMyDgQ5jc1EjQmzeC2rKf1Yo9_UFVKgdNd3C9ippnPPb7fUjzoufkYkHWfYUr9p9b5gytvdGyDOJ7xEng8PgI2Nj5Ki7OTIPB5gLrP87p0d36PX1FdHtA1_0T_oL2qsiUC1XTi_TlPirW6kRzg')">
+<div class="absolute top-4 right-4 bg-primary/80 backdrop-blur-md text-on-primary px-3 py-1 rounded font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+<span class="">DESPUÉS: PintoresPro</span>
+</div>
+</div>
+<!-- BEFORE Image (Clipped Overlay) -->
+<div class="absolute inset-0 h-full overflow-hidden" id="before-image-wrap" style="width: 50%;">
+<div class="absolute inset-0 w-[1280px] max-w-none h-full bg-cover bg-center" data-alt="Before renovation: Deteriorated living room wall with coarse yellowed gotele textured finish, hairline cracks around the ceiling corner, dark discolored scuffs, dim lighting, outdated interior condition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAg87t2qN8tyvB-OFAeJkg0bFOUiahQJT1jccQNJzNbYZiQcWVtdhP_DhCRheyCXCXpvhY2rrE4XI-T6jViFf_B4FyRDEvNF41tmhbXijHYS_DvyWOpBgPMkbTjaA9k69FsDljHvoeyaZqFgOeKtXDrie_pLCF80dnzlP1MVn5gD8KKznCzsx8rUM2D9ZDepGW885hdKXNiTgiQPU8lLeMmBpptneqxQGPvjLo7Uae64V5QkGrSdxMTA')">
+<div class="absolute top-4 left-4 bg-inverse-surface/80 backdrop-blur-md text-inverse-on-surface px-3 py-1 rounded font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">history</span>
+<span class="">ANTES: Gotelé &amp; Fisuras</span>
+</div>
+</div>
+</div>
+<!-- Divider Line & Scrubber Handle -->
+<div class="absolute top-0 bottom-0 z-20 cursor-ew-resize flex items-center justify-center pointer-events-none" id="slider-handle" style="left: 50%;">
+<div class="w-1 h-full bg-surface-bright shadow-[0_0_10px_rgba(0,0,0,0.4)]"></div>
+<div class="absolute w-11 h-11 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-xl border-2 border-surface-bright">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+</div>
+<!-- Touch/Drag Range Input Element (Invisible for smooth cross-device drag) -->
+<input aria-label="Deslizador de comparación antes y después" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0" id="slider-range-input" max="100" min="0" type="range" value="50">
+</div>
+<!-- Quick Metrics Strip under Slider -->
+<div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-surface-container-highest">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Protección Total</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Suelos y mobiliario tapados con cartón y plástico estanco.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">air</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Cero Olores Fuertes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resinas ecológicas al agua que permiten habitar la casa el mismo día.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">security</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Garantía Escrita</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 años contra desconchones, ampollas y desprendimientos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process & Craftsmanship Visual Bento -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Left Bento: Step Process -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Metodología de Trabajo</span>
+<h3 class="font-headline-md text-headline-md text-primary">Cómo convertimos tu espacio en una obra de arte</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Pintar bien no es solo pasar un rodillo. El 80% del éxito reside en la preparación rigurosa del soporte.
+          </p>
+</div>
+<div class="mt-6 space-y-4"><div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors"><span class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg font-bold flex-shrink-0">01</span><div><h4 class="font-label-lg text-label-lg text-primary">Protección Total</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Enmascarado milimétrico de suelos, marcos y rodapiés con sellado hermético.</p></div></div><div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors"><span class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg font-bold flex-shrink-0">02</span><div><h4 class="font-label-lg text-label-lg text-primary">Preparación y Saneado</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Apertura de grietas, empastado elástico y lijado aspirado sin polvo.</p></div></div><div class="flex items-start gap-4 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors"><span class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg font-bold flex-shrink-0">03</span><div><h4 class="font-label-lg text-label-lg text-primary">Acabado Fino y Limpieza</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Aplicación cruzada uniforme, secado respetado y recogida impecable.</p></div></div></div>
+</div>
+<!-- Right Bento: Verified Customer Testimonial & Guarantee -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<div class="bg-primary text-on-primary p-6 md:p-8 rounded-xl shadow-md flex flex-col justify-between flex-1">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-primary-fixed-dim font-label-sm text-label-sm">Obra en Pozuelo de Alarcón</span>
+</div>
+<blockquote class="font-body-md text-body-md text-primary-fixed italic">“Alisaron nuestro piso de 110m² en 4 días, sin una mota de polvo y con un acabado de revista.”</blockquote>
+</div>
+<div class="pt-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center font-bold text-on-secondary">
+              CL
+            </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-primary font-semibold">Carmen &amp; Luis R.</div>
+<div class="font-label-sm text-label-sm text-primary-fixed-dim">Pintura completa de piso residencial</div>
+</div>
+</div>
+</div>
+<!-- Color Matching Assistance Card -->
+<div class="bg-surface-container-high p-6 rounded-xl shadow-sm flex items-center gap-4">
+<div class="w-12 h-12 rounded bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary leading-snug">¿Dudas con los tonos?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Llevamos muestras físicas reales a tu domicilio para probar bajo tu iluminación natural.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Big Instant Quote Callout Anchor -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-6 pb-4">
+<div class="relative overflow-hidden bg-primary-container text-on-primary rounded-2xl p-8 md:p-12 shadow-xl">
+<!-- Decorative Glow -->
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl text-center lg:text-left space-y-3"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest/20 text-tertiary-fixed font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span><span class="">Respuesta en menos de 15 min</span></div><h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">¿Pintamos tu casa?</h2><p class="font-body-lg text-body-lg text-primary-fixed-dim">Envíanos fotos o vídeo por WhatsApp y recibe tu presupuesto estimado al instante.</p></div>
+<div class="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
+<a class="px-6 py-4 rounded-xl bg-[#25D366] text-on-primary hover:brightness-105 transition-all shadow-[0_8px_24px_rgba(37,211,102,0.35)] flex items-center gap-3 font-label-lg text-label-lg font-bold" href="https://wa.me/34612345678?text=Hola%2C%20adjunto%20fotos%20de%20mi%20vivienda%20para%20pedir%20presupuesto%20estimado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="">Enviar Fotos por WhatsApp</span>
+</a>
+<a class="px-6 py-4 rounded-xl bg-surface-bright/10 hover:bg-surface-bright/20 text-on-primary transition-colors flex items-center gap-2 font-label-lg text-label-lg" href="tel:+34612345678">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span class="">+34 612 345 678</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Inline Script for Filtering & Interactive Before/After Scrubber -->
+<script>
+    (function initGalleryInteractions() {
+      // 1. Portfolio Category Filtering Logic
+      const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+      const cards = document.querySelectorAll('.portfolio-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Visual toggle
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-high', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+
+          const category = btn.getAttribute('data-filter');
+
+          cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+              card.classList.add('animate-fadeIn');
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 2. Before / After Interactive Slider Scrubber
+      const rangeInput = document.getElementById('slider-range-input');
+      const beforeWrap = document.getElementById('before-image-wrap');
+      const handle = document.getElementById('slider-handle');
+
+      if (rangeInput && beforeWrap && handle) {
+        const updateSlider = (val) => {
+          beforeWrap.style.width = val + '%';
+          handle.style.left = val + '%';
+        };
+
+        rangeInput.addEventListener('input', (e) => {
+          updateSlider(e.target.value);
+        });
+
+        // Initialize at 50%
+        updateSlider(50);
+      }
+    })();
+  </script>
+</div></main><div class="fixed bottom-6 right-6 z-50 flex items-center group"><div class="mr-3 hidden md:flex items-center bg-inverse-surface text-inverse-on-surface px-3 py-1.5 rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.15)] font-label-sm text-label-sm transition-all opacity-95 group-hover:opacity-100">¿Necesitas pintar tu casa? ¡Hablemos por WhatsApp!</div><a aria-label="Contacto directo por WhatsApp" class="w-14 h-14 rounded-full bg-[#25D366] text-on-primary flex items-center justify-center shadow-[0_12px_32px_-6px_rgba(27,36,44,0.18)] hover:scale-105 hover:shadow-[0_6px_20px_rgba(37,211,102,0.45)] transition-all" href="https://wa.me/34612345678?text=Hola%2C%20quisiera%20pedir%20presupuesto%20para%20pintar%20mi%20vivienda" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[30px]">chat</span></a></div>
+
+</body>
+</Layout>

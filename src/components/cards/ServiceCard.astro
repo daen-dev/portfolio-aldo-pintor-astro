@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+
+const { img, badge, title, desc  } = Astro.props
+---
+
+ <div class="group flex flex-col rounded-xl overflow-hidden bg-info/10 shadow-md hover:shadow-xl transition-all duration-300">
+    <div class="relative h-52 w-full overflow-hidden bg-info/20">
+        <Image src={img} alt="image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute top-3 left-3 badge badge-info">
+            {badge}
+        </div>
+    </div>
+    <div class="p-6 flex flex-col flex-1">
+        <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+            {title}
+        </h3>
+        <p class="font-light text-sm mb-4 flex-1">
+            {desc}
+        </p>
+    </div>
+</div>

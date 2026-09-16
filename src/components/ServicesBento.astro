@@ -1,0 +1,60 @@
+---
+import ServiceCard from "./cards/ServiceCard.astro";
+import img1 from "../assets/service.png"
+
+---
+
+<section class="w-full py-16 md:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold block mb-2">
+                    Procesos de trabajo
+                </span>
+                <h2
+                    class="font-headline-lg text-headline-lg text-primary tracking-tight"
+                >
+                    Servicios con acabados de alta precisión
+                </h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                Atque nihil illum voluptatem aliquam aut nostrum, possimus sit porro, tenetur distinctio similique.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+            <!-- Service 1: Interior Painting -->
+
+            <ServiceCard 
+                img={img1} 
+                badge="Preparación" 
+                title="Lijado de superficies" 
+                desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia eum eius vel. Quisquam ut delectus voluptatibus hic? Suscipit aliquam provident praesentium accusamus?" 
+            />
+
+            <ServiceCard 
+                img={img1} 
+                badge="Preparación" 
+                title="Sellado de grietas" 
+                desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia eum eius vel. Quisquam ut delectus voluptatibus hic? Suscipit aliquam provident praesentium accusamus?" 
+            />
+
+            <ServiceCard 
+                img={img1} 
+                badge="Pintado" 
+                title="Pintado de superficies" 
+                desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia eum eius vel. Quisquam ut delectus voluptatibus hic? Suscipit aliquam provident praesentium accusamus?" 
+            />
+
+            <ServiceCard 
+                img={img1} 
+                badge="Post pintado" 
+                title="Limpieza" 
+                desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia eum eius vel. Quisquam ut delectus voluptatibus hic? Suscipit aliquam provident praesentium accusamus?" 
+            />
+
+        </div>
+    </div>
+</section>
