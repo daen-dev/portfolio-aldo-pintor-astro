@@ -7,5 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  site: 'https://daen-dev.github.io',
+  base: '/portfolio-aldo-pintor-astro'
 });
