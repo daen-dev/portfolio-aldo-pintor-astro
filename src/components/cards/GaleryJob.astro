@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+
+const { img, place, days, job, desc } = Astro.props
+
+---
+
+<div class="rounded-xl overflow-hidden bg-info/20 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+    <div class="relative h-64 overflow-hidden bg-info/10">
+        <Image src={img} alt="Trabajo" class="w-full h-full object-cover"/>
+    </div>
+    <div class="p-5 flex flex-col flex-1">
+        <div class="flex items-center justify-between mb-1">
+            <span class="text-sm text-secondary font-semibold">
+                {place}
+            </span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">
+                {days} días de obra
+            </span>
+        </div>
+        <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+            {job}
+        </h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+            {desc}
+        </p>
+    </div>
+</div>

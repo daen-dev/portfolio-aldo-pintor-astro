@@ -1,0 +1,44 @@
+---
+import GaleryJob from "./cards/GaleryJob.astro";
+import img1 from "../assets/job.jpg"
+---
+
+<section class="w-full py-16 md:py-20 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+                <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold block mb-2">
+                        Trabajos</span>
+                <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+                    Obras terminadas con precisión artesanal
+                </h2>
+            </div>
+        </div>
+		
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+						
+            <GaleryJob 
+				img={img1} 
+				place="Fachada de casa", 
+				days="4", 
+				job="Pintado sintetico" 
+				desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque accusamus, necessitatibus omnis autem qui consectetur dolore eum temporibus voluptatem doloremque impedit eius sequi ipsam." />
+            <GaleryJob 
+				img={img1} 
+				place="Fachada de casa", 
+				days="4", 
+				job="Pintado sintetico" 
+				desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque accusamus, necessitatibus omnis autem qui consectetur dolore eum temporibus voluptatem doloremque impedit eius sequi ipsam."/>
+            <GaleryJob 
+				img={img1} 
+				place="Fachada de casa", 
+				days="4", 
+				job="Pintado sintetico" 
+				desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque accusamus, necessitatibus omnis autem qui consectetur dolore eum temporibus voluptatem doloremque impedit eius sequi ipsam."/>			
+
+						
+		</div>
+	</div>
+</section>

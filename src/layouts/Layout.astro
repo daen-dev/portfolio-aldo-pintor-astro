@@ -21,5 +21,64 @@ import '../styles/global.css'
 		<Header />
 		<slot />
 		<Footer />
+		<!-- Micro-interaction script for before/after comparison slider -->
+			<script>
+				(function () {
+					const container =
+						document.getElementById("before-after-box");
+					const beforeLayer =
+						document.getElementById("before-layer");
+					const handle = document.getElementById("slider-handle");
+
+					if (!container || !beforeLayer || !handle) return;
+
+					let isDragging = false;
+
+					function updateSlider(xPos) {
+						const rect = container.getBoundingClientRect();
+						let position =
+							((xPos - rect.left) / rect.width) * 100;
+						if (position < 0) position = 0;
+						if (position > 100) position = 100;
+
+						beforeLayer.style.width = position + "%";
+						handle.style.left = position + "%";
+					}
+
+					container.addEventListener("mousedown", function (e) {
+						isDragging = true;
+						updateSlider(e.clientX);
+					});
+
+					window.addEventListener("mousemove", function (e) {
+						if (!isDragging) return;
+						updateSlider(e.clientX);
+					});
+
+					window.addEventListener("mouseup", function () {
+						isDragging = false;
+					});
+
+					container.addEventListener(
+						"touchstart",
+						function (e) {
+							if (e.touches.length > 0) {
+								updateSlider(e.touches[0].clientX);
+							}
+						},
+						{ passive: true },
+					);
+
+					container.addEventListener(
+						"touchmove",
+						function (e) {
+							if (e.touches.length > 0) {
+								updateSlider(e.touches[0].clientX);
+							}
+						},
+						{ passive: true },
+					);
+				})();
+			</script>
 	</body>
 </html>
